@@ -1,6 +1,6 @@
-google-cloud==0.34.0
+google-cloud>=0.34.0
 google-cloud-videointelligence==2.3.2
-google-cloud-vision==0.34.0
+google-cloud-vision>=0.34.0
 numpy==1.19.5
 pandas==1.2.1
 seaborn==0.11.1
