@@ -23,10 +23,7 @@ def detect_safe_search(path):
                        'LIKELY', 'VERY_LIKELY')
     print('Safe search:')
 
-    print('adult: {}'.format(likelihood_name[safe.adult]))
-    print('medical: {}'.format(likelihood_name[safe.medical]))
-    print('spoofed: {}'.format(likelihood_name[safe.spoof]))
-    print('violence: {}'.format(likelihood_name[safe.violence]))
+    #print('adult: {}'.format(likelihood_name[safe.adult]))
     print('racy: {}'.format(likelihood_name[safe.racy]))
 
     if response.error.message:
@@ -35,4 +32,4 @@ def detect_safe_search(path):
             'https://cloud.google.com/apis/design/errors'.format(
                 response.error.message))
 
-    return 'adult: {}'.format(likelihood_name[safe.adult])
+    return 'racy: {}'.format(likelihood_name[safe.racy])
