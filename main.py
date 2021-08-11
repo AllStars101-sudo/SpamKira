@@ -31,7 +31,7 @@ def handle_message(update, context):
         else:
             os.remove(path)
     elif update.message.text:
-        if str(update.message.text) in ["free","tf", "trading", "video", "send some video"]:
+        if str(update.message.text) in ["free","tf", "trading", "video", "send some video", "porn"]:
             pass
         elif spam.predict_spam(str(update.message.text)):
             result = ["This is spam. I've written your name in my Death Note.","Ohhh, this is a normal message."]
